@@ -23,7 +23,7 @@ require_once('function.php');
     <!-- Additional CSS -->
     <link rel="stylesheet" href="css/main.css" >
 
-    <title>CD LIBRARY - Dashboard</title>
+    <title>EQUIPMENT LIBRARY - Dashboard</title>
   </head>
   <body>
 
@@ -41,10 +41,10 @@ require_once('function.php');
                         <img src="img/image-1.jpg" alt="" class="img-fluid">
                       <div class="row text-center mt-2">
                           
-                          <div class="col-md-3 col-6"> <a class="btn btn-success btn-block" href="borrow-cd.php" role="button">Borrow EQUIPMENT</a> </div>
+                          <div class="col-md-3 col-6"> <a class="btn btn-success btn-block" href="borrow-equipment.php" role="button">Borrow EQUIPMENT</a> </div>
                           <div class="col-md-3 col-6"> <a class="btn btn-success btn-block" href="add-user.php" role="button">Add new user</a> </div>
                           <div class="col-md-3 col-6"> <a class="btn btn-success btn-block" href="borrow-history.php" role="button">Borrow history</a> </div>
-                          <div class="col-md-3 col-6"> <a class="btn btn-warning btn-block" href="add-cd.php" role="button">Add new EQUIPMENT</a> </div>
+                          <div class="col-md-3 col-6"> <a class="btn btn-warning btn-block" href="add-equipment.php" role="button">Add new EQUIPMENT</a> </div>
                
                       </div>
                       <hr>
@@ -57,11 +57,11 @@ require_once('function.php');
 
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="img/cd.png" alt="cd" class="img-fluid">
+                                    <img src="img/equipment.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong>TOTAL EQUIPMENT'S</strong> </h5>
-                                    <p class="card-text"><?php echo total_cd(); ?></p>
+                                    <p class="card-text"><?php echo total_equipment(); ?></p>
                                 </dic>
                             </div>                                
                                
@@ -78,7 +78,7 @@ require_once('function.php');
 
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="img/team.png" alt="cd" class="img-fluid">
+                                    <img src="img/team.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong>TOTAL USER'S</strong> </h5>
@@ -99,7 +99,7 @@ require_once('function.php');
 
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="img/money.png" alt="cd" class="img-fluid">
+                                    <img src="img/money.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong> TOTAL EARN </strong> </h5>
