@@ -13,7 +13,7 @@ $insert_bequipment = "INSERT INTO `borrowequipment`(`equipmentid`, `userid`, `is
 if (mysqli_query($con, $insert_bequipment)) {
     // echo "New record created successfully";
     $last_id = mysqli_insert_id($con);
-    header('Location: borrow-cd-finish.php?borrowid='.$last_id);
+    header('Location: borrow-equipment-finish.php?borrowid='.$last_id);
 
 } else {
     echo "Error: " . $insert_bequipment . "<br>" . mysqli_error($con);
