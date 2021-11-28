@@ -62,10 +62,10 @@ $count_all_equipment = mysqli_num_rows($select_all_equipment_result);
                                 <div class="row mt-3">
                                     
                                     <div class="col">
-                                    <input type="text" class="form-control" name="title" placeholder="Equipment">
+                                    <input type="text" class="form-control" name="equipment" placeholder="Equipment">
                                     </div>
                                     <div class="col">
-                                    <input type="text" class="form-control" name="author" placeholder="Manufacturer">
+                                    <input type="text" class="form-control" name="manufacturer" placeholder="Manufacturer">
                                     </div>
                                     <div class="col">
                                     <input type="text" class="form-control" name="fee" placeholder="Fee">
@@ -94,8 +94,8 @@ $count_all_equipment = mysqli_num_rows($select_all_equipment_result);
                             <table class="table" >
                                 <thead class="thead-dark">
                                     <tr>                               
-                                        <th scope="col">Ttile</th>
-                                        <th scope="col">Author</th>
+                                        <th scope="col">Equipment</th>
+                                        <th scope="col">Manufacturer</th>
                                         <th scope="col">Fee</th>
                                         <th scope="col">Category</th>
                                         <th scope="col">Status</th>
@@ -108,8 +108,8 @@ $count_all_equipment = mysqli_num_rows($select_all_equipment_result);
                                         while($row_all_equipment = mysqli_fetch_assoc($select_all_equipment_result)){
                                             ?>
                                             <tr>                                   
-                                                <td><?php echo $row_all_equipment['title']; ?></td>
-                                                <td><?php echo $row_all_equipment['author']; ?></td>
+                                                <td><?php echo $row_all_equipment['equipment']; ?></td>
+                                                <td><?php echo $row_all_equipment['manufacturer']; ?></td>
                                                 <td><?php echo "Rs. ".$row_all_equipment['price'].".00"; ?></td>
                                                 <td><?php echo $row_all_equipment['category']; ?></td>
                                                 <td><?php echo $row_all_equipment['status']; ?></td>
