@@ -78,7 +78,7 @@ require_once('function.php');
 
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="img/team.png" alt="equipment" class="img-fluid">
+                                    <img src="img/user.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong>TOTAL USER'S</strong> </h5>
