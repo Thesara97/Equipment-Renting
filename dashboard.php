@@ -33,7 +33,7 @@ require_once('function.php');
                
             <div class="card ">
                     <div class="card-header">
-                        <span>Welcome - RENT EQUIPMENT </span>
+                        <span>Welcome - Equipment Renting Management System </span>
                         <a class="btn btn-danger" href="logout.php" role="button" style="float: right; margin-left:5px;">LOGOUT</a> 
                         <a class="btn btn-dark" href="settings.php" role="button" style="float: right;">Settings</a> 
                     </div>
