@@ -60,7 +60,7 @@ require_once('function.php');
                                     <img src="img/equipment.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
-                                    <h5 class="card-title"> <strong>TOTAL EQUIPMENT'S</strong> </h5>
+                                    <h5 class="card-title"> <strong>TOTAL EQUIPMENT</strong> </h5>
                                     <p class="card-text"><?php echo total_equipment(); ?></p>
                                 </dic>
                             </div>                                
@@ -81,7 +81,7 @@ require_once('function.php');
                                     <img src="img/user.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
-                                    <h5 class="card-title"> <strong>TOTAL USER'S</strong> </h5>
+                                    <h5 class="card-title"> <strong>TOTAL <Br> USER'S</strong> </h5>
                                     <p class="card-text">  <?php echo total_user(); ?></p>
                                 </dic>
                             </div>                                
@@ -102,7 +102,7 @@ require_once('function.php');
                                     <img src="img/money.png" alt="equipment" class="img-fluid">
                                 </div>
                                 <dic class="col-8">
-                                    <h5 class="card-title"> <strong> TOTAL EARN </strong> </h5>
+                                    <h5 class="card-title"> <strong> TOTAL <Br> EARN </strong> </h5>
                                     <p class="card-text">Rs <?php echo total_amout(); ?>.00</p>
                                 </dic>
                             </div>                                
