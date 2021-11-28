@@ -73,7 +73,7 @@ $select_all_user_result = mysqli_query($con, $select_all_users);
                                             <?php 
                                             while($row_equipments = mysqli_fetch_assoc($select_all_equipment_result)){
                                                 ?>
-                                                     <option value="<?php echo $row_equipments['id']; ?>"> <?php echo $row_equipments['title']; ?> - <?php echo $row_equipments['price']; ?> (<?php echo $row_equipments['category']; ?>) </option>
+                                                     <option value="<?php echo $row_equipments['id']; ?>"> <?php echo $row_equipments['equipment']; ?> - <?php echo $row_equipments['price']; ?> (<?php echo $row_equipments['category']; ?>) </option>
                                                 <?php
                                             }
                                             ?>
