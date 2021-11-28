@@ -19,18 +19,18 @@ $select_borrow_data = "SELECT * FROM `borrowequipment` WHERE id = '$borrowid'";
 $select_borrow_data_result = mysqli_query($con, $select_borrow_data);
 $row_borrow_data = mysqli_fetch_assoc($select_borrow_data_result);
 
-$borrowequipmentid = $row_borrow_data['borrowequipmentid'];
+$equipmentid = $row_borrow_data['equipmentid'];
 $userid = $row_borrow_data['userid'];
 $returndate = $row_borrow_data['returndate'];
 
 
-$select_all_borrowequipment = "SELECT * FROM `borrowequipment` WHERE id = '$equipmentid' ORDER BY id DESC LIMIT 1";
-$select_all_equipment_result = mysqli_query($con, $select_all_borrowequipment);
-$row_borrowequipments = mysqli_fetch_assoc($select_all_borrowequipment_result);
+$select_all_equipment = "SELECT * FROM `equipment` WHERE id = '$equipmentid' ORDER BY id DESC LIMIT 1";
+$select_all_equipment_result = mysqli_query($con, $select_all_equipment);
+$row_quipments = mysqli_fetch_assoc($select_all_equipment_result);
 
-$borrowequipment_title = $row_borrowequipments['equipment'];
-$borrowequipment_price = $row_borrowequipments['price'];
-$borrowequipment_category = $row_borrowequipments['category'];
+$equipment_title = $row_equipments['equipment'];
+$equipment_price = $row_equipments['price'];
+$equipment_category = $row_equipments['category'];
 
 
 $select_all_users = "SELECT * FROM `user` WHERE userid = '$userid' ORDER BY userid DESC LIMIT 1";
