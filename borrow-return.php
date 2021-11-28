@@ -24,11 +24,11 @@ $userid = $row_borrow_data['userid'];
 $returndate = $row_borrow_data['returndate'];
 
 
-$select_all_borrowequipment = "SELECT * FROM `borrowequipment` WHERE id = '$cdid' ORDER BY id DESC LIMIT 1";
-$select_all_cd_result = mysqli_query($con, $select_all_borrowequipment);
+$select_all_borrowequipment = "SELECT * FROM `borrowequipment` WHERE id = '$equipmentid' ORDER BY id DESC LIMIT 1";
+$select_all_equipment_result = mysqli_query($con, $select_all_borrowequipment);
 $row_borrowequipments = mysqli_fetch_assoc($select_all_borrowequipment_result);
 
-$borrowequipment_title = $row_borrowequipments['title'];
+$borrowequipment_title = $row_borrowequipments['equipment'];
 $borrowequipment_price = $row_borrowequipments['price'];
 $borrowequipment_category = $row_borrowequipments['category'];
 
@@ -98,7 +98,7 @@ $days = floor($calculate_seconds / (24 * 60 * 60 ));
                                 <div class="row  mt-3">                                    
                                   
                                     <div class="col">
-                                    <h2> <?php echo $cd_title; ?> <span class="badge badge-secondary"> <?php echo $cd_category; ?> </span> </h2> 
+                                    <h2> <?php echo $equipment_title; ?> <span class="badge badge-secondary"> <?php echo $equipment_category; ?> </span> </h2> 
                                     <h5 class="text-dark"> Issue Date : <?php echo $row_borrow_data['issuedate']; ?> </h5>
                                     <h5 <?php if($days < 0){ echo 'class="text-danger"'; }else{ echo 'class="text-success"'; } ?> > Return Date : <?php echo $row_borrow_data['returndate']; ?> </h5>
 
