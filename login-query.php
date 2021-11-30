@@ -10,6 +10,7 @@ if(isset($_POST['login'])){
     if($username == "admin" && $password == "Admin123"){
         $_SESSION['adminid'] = "1";
         header('Location: dashboard.php');
+        exit();
     }else{
         header('Location: index.php');
     }
