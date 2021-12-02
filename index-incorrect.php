@@ -21,7 +21,7 @@
                
             <div class="card ">
                     <div class="card-header">
-                        Login
+                        Login 
                     </div>
                     <div class="card-body">
                         <form method="post" action="login-query.php">
@@ -34,8 +34,9 @@
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                             </div>
-                            
-                            
+                            <div class="form-group">
+                                <label for="password"><p style="color:red"> Incorrect Username or Password <p> </label>
+                            </div>
                            
                             <button type="submit" class="btn btn-primary" name="login">Login</button>
                         </form>

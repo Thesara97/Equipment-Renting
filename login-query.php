@@ -12,7 +12,7 @@ if(isset($_POST['login'])){
         header('Location: dashboard.php');
         exit();
     }else{
-        header('Location: index.php');
+        header('Location: index-incorrect.php');
     }
 
 }
