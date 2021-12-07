@@ -72,10 +72,11 @@ $count_all_equipment = mysqli_num_rows($select_all_equipment_result);
                                     </div>
                                     <div class="col">
                                    <select name="category" id="category" class="form-control">
-                                       <option value="Air compressors">Air compressors</option>
-                                       <option value="Generators">Generators</option>
-                                       <option value="Generators">Chainsaws</option>
-                                       <option value="Generators">Drills</option>
+                                       <option value="Power Tools">Power Tools</option>
+                                       <option value="Hand Tools">Hand Tools</option>
+                                       <option value="Automotive Tools">Automotive Tools</option>
+                                       <option value="Welding Tools">Welding Tools</option>
+                                       <option value="Accessories">Accessories</option>
                                    </select>
                                     </div>
                                     <div class="col">
