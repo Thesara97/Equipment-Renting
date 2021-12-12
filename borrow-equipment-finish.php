@@ -31,7 +31,7 @@ $equipment_price = $row_equipments['price'];
 $equipment_category = $row_equipments['category'];
 
 
-$select_all_users = "SELECT * FROM `user` WHERE userid = '$userid' ORDER BY userid DESC LIMIT 1";
+$select_all_users = "SELECT * FROM `user` WHERE id = '$userid' ORDER BY id DESC LIMIT 1";
 $select_all_user_result = mysqli_query($con, $select_all_users);
 $row_users = mysqli_fetch_assoc($select_all_user_result);
 
