@@ -62,16 +62,16 @@ $count_all_equipment = mysqli_num_rows($select_all_equipment_result);
                                 <div class="row mt-3">
                                     
                                     <div class="col">
-                                    <input type="text" class="form-control" name="equipment" placeholder="Equipment">
+                                    <input type="text" class="form-control" name="equipment" placeholder="Equipment" required>
                                     </div>
                                     <div class="col">
-                                    <input type="text" class="form-control" name="manufacturer" placeholder="Manufacturer">
+                                    <input type="text" class="form-control" name="manufacturer" placeholder="Manufacturer" required>
                                     </div>
                                     <div class="col">
-                                    <input type="text" class="form-control" name="fee" placeholder="Fee">
+                                    <input type="text" class="form-control" name="fee" placeholder="Fee" required>
                                     </div>
                                     <div class="col">
-                                   <select name="category" id="category" class="form-control">
+                                   <select name="category" id="category" class="form-control" >
                                        <option value="Power Tools">Power Tools</option>
                                        <option value="Hand Tools">Hand Tools</option>
                                        <option value="Automotive Tools">Automotive Tools</option>
