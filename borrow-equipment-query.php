@@ -2,9 +2,9 @@
 
 require_once('database/connection.php');
 
-$equipment        = $_POST['equipment'];
-$user      = $_POST['user'];
-$return    = $_POST['returndate'];
+$equipment  = $_POST['equipment'];
+$user       = $_POST['user'];
+$return     = $_POST['returndate'];
 
 $today = date('Y-m-d');
 

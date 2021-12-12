@@ -62,16 +62,16 @@ $count_all_users = mysqli_num_rows($select_all_user_result);
                                 <div class="row mt-3">
                                     
                                     <div class="col">
-                                    <input type="text" class="form-control" name="name" placeholder="Full name">
+                                    <input type="text" class="form-control" name="name" placeholder="Full name" required>
                                     </div>
                                     <div class="col">
-                                    <input type="text" class="form-control" name="mobile" placeholder="Mobile">
+                                    <input type="text" class="form-control" name="mobile" placeholder="Mobile" required>
                                     </div>
                                     <div class="col">
-                                    <input type="text" class="form-control" name="nic" placeholder="NIC">
+                                    <input type="text" class="form-control" name="nic" placeholder="NIC" required>
                                     </div>
                                     <div class="col">
-                                    <input type="text" class="form-control" name="address" placeholder="Address">
+                                    <input type="text" class="form-control" name="address" placeholder="Address" required>
                                     </div>
                                     <div class="col">
                                     <button type="submit" class="btn btn-primary btn-block" name="adduser">Add</button>
