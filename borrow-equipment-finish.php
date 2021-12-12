@@ -26,12 +26,12 @@ $select_all_equipment = "SELECT * FROM `equipment` WHERE id = '$equipmentid' ORD
 $select_all_equipment_result = mysqli_query($con, $select_all_equipment);
 $row_equipments = mysqli_fetch_assoc($select_all_equipment_result);
 
-$equipment_title = $row_equipments['title'];
+$equipment_title = $row_equipments['equipment'];
 $equipment_price = $row_equipments['price'];
 $equipment_category = $row_equipments['category'];
 
 
-$select_all_users = "SELECT * FROM `user` WHERE id = '$userid' ORDER BY id DESC LIMIT 1";
+$select_all_users = "SELECT * FROM `user` WHERE userid = '$userid' ORDER BY userid DESC LIMIT 1";
 $select_all_user_result = mysqli_query($con, $select_all_users);
 $row_users = mysqli_fetch_assoc($select_all_user_result);
 

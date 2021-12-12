@@ -26,7 +26,7 @@ $returndate = $row_borrow_data['returndate'];
 
 $select_all_equipment = "SELECT * FROM `equipment` WHERE id = '$equipmentid' ORDER BY id DESC LIMIT 1";
 $select_all_equipment_result = mysqli_query($con, $select_all_equipment);
-$row_quipments = mysqli_fetch_assoc($select_all_equipment_result);
+$row_equipments = mysqli_fetch_assoc($select_all_equipment_result);
 
 $equipment_title = $row_equipments['equipment'];
 $equipment_price = $row_equipments['price'];
