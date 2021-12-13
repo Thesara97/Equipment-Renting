@@ -6,7 +6,8 @@ if (!isset($_SESSION['adminid'])) {
     header('Location: index.php');
 }
 
-require_once('function.php');
+include('function.php');
+$func = new Functions;
 
 ?>
 
@@ -61,7 +62,7 @@ require_once('function.php');
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong>TOTAL EQUIPMENT</strong> </h5>
-                                    <p class="card-text"><?php echo total_equipment(); ?></p>
+                                    <p class="card-text"><?php echo $func->total_count('equipment'); ?></p>
                                 </dic>
                             </div>                                
                                
@@ -82,7 +83,7 @@ require_once('function.php');
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong>TOTAL <Br> USER'S</strong> </h5>
-                                    <p class="card-text">  <?php echo total_user(); ?></p>
+                                    <p class="card-text">  <?php echo $func->total_count('user'); ?></p>
                                 </dic>
                             </div>                                
                                
@@ -103,7 +104,7 @@ require_once('function.php');
                                 </div>
                                 <dic class="col-8">
                                     <h5 class="card-title"> <strong> TOTAL <Br> EARN </strong> </h5>
-                                    <p class="card-text">Rs <?php echo total_amout(); ?>.00</p>
+                                    <p class="card-text">Rs <?php echo $func->total_amout(); ?>.00</p>
                                 </dic>
                             </div>                                
                                
