@@ -1,11 +1,5 @@
 <?php
 //connection.php
-$con = new mysqli("localhost", "root", "", "equipment");
- 
-// Check connection
-if($con === false){
-    die("ERROR: Could not connect. " . $mysqli->connect_error);
-}
 
 class Databases{  
   public $con;  
@@ -42,6 +36,13 @@ class Databases{
        }  
        return $array;  
   }  
-}  
+} 
+
+$con = new mysqli("localhost", "root", "", "equipment");
+ 
+// Check connection
+if($con === false){
+    die("ERROR: Could not connect. " . $mysqli->connect_error);
+}
  
 ?>
