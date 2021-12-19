@@ -11,7 +11,7 @@ if($data->con->query($update_fee) === true){
     echo "Records were updated successfully.";
     header('Location: dashboard.php');
 } else{
-    echo "ERROR: Could not able to execute $update_fee. " . $mysqli->error;
+    echo "ERROR: Could not able to execute $update_fee. " . $data->con->error;
 }
 
 ?>
