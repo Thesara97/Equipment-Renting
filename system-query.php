@@ -1,18 +1,17 @@
 <?php
 
-require_once('database/connection.php');
+include('database/connection.php');
+$data = new Databases;
 
 $borrowid    = $_POST['fee'];
 
-$update_fee = "UPDATE `settings` SET `paneltyfee` = '$borrowid' WHERE `id` = '1'";
+$update_fee = "UPDATE settings SET paneltyfee ='$borrowid' WHERE id = 1";
 
-if (mysqli_query($con, $update_fee)) {
-    // echo "New record created successfully";
-  
+if($data->con->query($update_fee) === true){
+    echo "Records were updated successfully.";
     header('Location: dashboard.php');
-
-} else {
-    echo "Error: " . $update_fee . "<br>" . mysqli_error($con);
+} else{
+    echo "ERROR: Could not able to execute $update_fee. " . $mysqli->error;
 }
 
 ?>
