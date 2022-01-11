@@ -1,5 +1,8 @@
 <?php
 
+include('function.php');
+$func = new Functions;
+
 require_once('database/connection.php');
 session_start();
 
@@ -111,7 +114,7 @@ $days = floor($calculate_seconds / (24 * 60 * 60 ));
                                       <div class="col">
                                     <h1 class="text-danger"> <?php $withouddash =  substr($days, 1); echo $withouddash; ?> Days Late </h1> 
                                     <h3 class="text-dark"> Penalty Fee: <?php $noofdays = (int)$withouddash;  echo $noofdays;?> X Rs. <?php echo number_format($fee,2); ?> </h3>
-                                    <span class="badge badge-success"> <h1> <?php $feecal =  $noofdays*$fee; echo "Rs. ".number_format($feecal,2); ?> </h1> </span>
+                                    <span class="badge badge-success"> <h1> <?php $feecal =  $noofdays*$fee; echo "Rs. ".number_format($func->total_panelty($feecal),2); ?> </h1> </span>
                                         
                                     </div>
                                      <?php
