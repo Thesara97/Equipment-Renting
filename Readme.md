@@ -2,6 +2,7 @@
 
 A fully functional and computerized software system for equipment renting.
 
+https://equipment-renting-group-c.000webhostapp.com/dashboard.php
 
 
 ## Features
